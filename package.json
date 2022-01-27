@@ -1,0 +1,54 @@
+{
+  "name": "nestjs-sharp",
+  "version": "1.0.0",
+  "description": "Nest - modern, fast, powerful node.js web framework (@sharp)",
+  "author": "Thomas Moser",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TMInnovations/nestjs-sharp"
+  },
+  "keywords": [
+    "nest",
+    "nestjs",
+    "sharp",
+    "image",
+    "photo",
+    "manipulation"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "format": "prettier --write \"**/*.ts\"",
+    "lint": "eslint 'lib/**/*.ts' --fix",
+    "release": "npm run build && np"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=6.7.0",
+    "@nestjs/core": ">=6.7.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^8.2.6",
+    "@nestjs/core": "^8.2.6",
+    "@types/node": "^13.9.2",
+    "@types/sharp": "^0.29.5",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "prettier": "^1.19.1",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.7.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "sharp": "^0.29.3"
+  }
+}
