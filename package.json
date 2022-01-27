@@ -22,6 +22,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "test": "echo \"No test specified\"",
     "format": "prettier --write \"**/*.ts\"",
     "lint": "eslint 'lib/**/*.ts' --fix",
     "release": "npm run build && np"
