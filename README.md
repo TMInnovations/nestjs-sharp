@@ -4,7 +4,7 @@ Very thin Layer to be able to import sharp as Module / inject sharp as Service i
 
 ## How to use
 
-`npm i nestjs-sharp`
+`npm i nestjs-sharp @types/sharp`
 
 Import `SharpModule` in the Module you want to use it in:
 
